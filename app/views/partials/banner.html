@@ -1,0 +1,16 @@
+<section id="banner" class="videobanner">
+    <div class="fade"></div>
+    <div bc-imagesloaded bc-background="true" bc-always-method="alwaysMethod(instance)" class="banner-content parallax-banner banner-image-back" back-img="item.banner.dataImages[0].url">
+        <div class="banner-inside">
+        <div class="contenido-banner">
+            <span class="category" ng-scroll-reveal="{duration :1000, delay: 100, scale:1}"><any>{{item.dataProject[currentLanguage]}} <span ng-if="item.dataProject[currentLanguage] && item.location[currentLanguage]">|</span> {{item.location[currentLanguage]}}</any></span>
+            <h1 class=" " ng-scroll-reveal="{duration :1000, delay: 200, scale:1} "><any ng-bind-html="item.title[currentLanguage]"></any></h1>
+            <p class=" " ng-scroll-reveal="{duration :1000, delay:400, scale:1} "><any ng-bind-html="item.subtitle[currentLanguage]"></any></p><br><br>
+            <ng-if ng-if="item.banner.dataVideo.withVideo===true">
+            <div class="botonet playVid"><a href=" " ng-click="playVideo()" analytics-on="click" analytics-event="PlayVideo "><span><any ng-bind-html=" 'PLAY.VIDEO' | translate " class="ng-binding "></span></a>
+            </div>
+            </ng-if>
+        </div>
+        </div>
+    </div>
+</section>
